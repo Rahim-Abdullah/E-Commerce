@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+body{
+	font-family: 'Roboto', sans-serif;
+}
+.input-group-append{
+	cursor: pointer;
+}
+.right-menu{
+	list-style:none;
+}
+.right-menu li{
+	float:left;
+	margin-right:10px;
+	cursor: pointer;
+}
+.fashion-trends{
+	padding:100px 0;
+}
+.fashion-box{
+	margin:80px 0;
+}
+.title-style h1{
+	padding:40px 0;
+	font-weight: 600;
+}
+.title-style{
+	margin:0 auto 80px;
+	height:120px;
+	width:80%;
+	max-width:700px;
+	background:white;
+	position:relative;
+	box-shadow:0 4px 5px 0 rgba(0,0,50,.5);
+}
+.title-style::after{
+	content:'';
+	height:100px;
+	width:200px;
+	background-color:pink;
+	position:absolute;
+	top:-10px;
+	left:-10px;
+	z-index:-1;
+}
+.title-style::before{
+	content:'';
+	height:100px;
+	width:200px;
+	background-color:pink;
+	position:absolute;
+	bottom:-10px;
+	right:-10px;
+	z-index:-1;
+}
+.trending-img{
+	position:relative;
+	margin-bottom:15px;
+}
+.btn-buy{
+	width:150px;
+	padding:10px 0;
+	outline:none !important;
+	border:0;
+	border-radius:2px;
+	position:absolute;
+	background:white;
+	left:50%;
+	bottom:0;
+	transform:translate(-50%,0);
+	transition:0.6s;
+	opacity:0;
+	z-index:1;
+}
+.trending-img:hover .btn-buy{
+	transform:translate(-50%,50%);
+	bottom:50%;	
+	opacity:1;
+}
+.overlay{
+	height:0;
+	width:100%;
+	background:#333;
+	position:absolute;
+	top:0;
+	opacity:.5;
+	transition:.5s;
+}
+.trending-img:hover .overlay{
+	opacity:.5;
+	height:100%;
+}
+.men-dress .overlay{
+	width: 225px;
+	height: 300px;
+	opacity:0;
+}
+.men-dress:hover .overlay{
+	width: 225px;
+	height: 300px;
+}
+.men-dress .btn-buy{
+	left: 50%
+}
+.men-dress .row{
+	margin-left: 50px;
+	margin-right: 100px;
+}
+.men-dress .top-row{
+	margin-left: 125px;
+	display: flex;
+	align-content: center;
+}
+.men-dress .bot-row{
+	margin-left: 250px;
+	
+	
+}
+.men-dress .bot-row .bottom{
+	margin-right: 35px;
+}
+.men-dress .bot-row .bottom .btn-buy{
+	left: 55%
+}
+.rating i{
+	color: darkorange;
+}
+.men-dress p{
+	font-weight: bold;
+}
+.frame{
+	overflow: hidden;
+}
+.frame-bg{
+	float: left;
+	position: relative;
+	opacity: 80%;
+}
+.frame-photo{
+	float: left;
+	position: absolute;
+	margin: 150px;
+}
+.frame-text{
+	height: 320px;
+	width: 500px;
+	color: black;
+	float: right;
+	background-color: rgba(255, 255, 255,0.5);
+	position: absolute;
+	margin-left: 700px;
+	padding: 50px;
+	margin-top: 60px;
+
+}
+.frame-text button{
+	outline: none;
+	background-color: black;
+	color: white;
+	height: 30px;
+	width: 110px;
+	line-height: 30px;
+	border: none;
+}
+.logo img{
+	height: 100px; 
+	width: 100px;
+	border-radius: 50%;
+	box-shadow: 10px 13px 7px -4px rgba(0,0,0,0.2); 
+	cursor: pointer;
+	
+}
+.brands .top{
+	margin-left: 150px;
+}
+.brands .bottom{
+	margin-left: 300px;
+	margin-top: 50px;
+}
+.brands .bottom .logo{
+	margin-left: 22px;
+}
+.ico img{
+	height:40px;
+	float: left;
+	margin-right: 20px;
+}
+.col-lg-4 p{
+	font-size: 14px;
+}
+.footer-content{
+	background-color: black;
+	height: 300px;
+	width: 100%;
+	color: white;
+	padding: 30px;
+	padding-top: 50px;
+	margin-top: 100px;
+}
+.footer-logo img{
+	margin-left: 75px;
+}
+.slogan{
+	text-align: center;
+}
